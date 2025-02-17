@@ -11,14 +11,14 @@ final class DynamicIslandBadgeManager {
     }
     
     // MARK: - Public Methods
-    func setupWithImage(_ image: UIImage) {
+    public func setupWithImage(_ image: UIImage) {
         if !addedToWindow {
             addToWindow()
         }
         badgeImageView?.image = image
     }
     
-    func bringToFront() {
+    public func bringToFront() {
         guard let badgeImageView = badgeImageView, let window = badgeImageView.superview else { return }
         window.bringSubviewToFront(badgeImageView)
     }
