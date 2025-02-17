@@ -1,7 +1,7 @@
 import UIKit
 
 final class DynamicIslandBadgeManager {
-    static let shared = DynamicIslandBadgeManager()
+    public static let shared = DynamicIslandBadgeManager()
     
     private var badgeImageView: UIImageView?
     private var addedToWindow = false
