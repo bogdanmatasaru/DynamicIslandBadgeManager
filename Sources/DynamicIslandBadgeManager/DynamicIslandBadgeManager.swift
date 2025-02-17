@@ -1,6 +1,6 @@
 import UIKit
 
-final class DynamicIslandBadgeManager {
+public final class DynamicIslandBadgeManager {
     public static let shared = DynamicIslandBadgeManager()
     
     private var badgeImageView: UIImageView?
