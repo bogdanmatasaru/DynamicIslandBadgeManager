@@ -49,9 +49,9 @@ public final class DynamicIslandBadgeManager {
     private func addBadge(to window: UIWindow) {
         guard isAvailable else { return }
         
-        let size = CGSize(width: 120, height: 30)
+        let size = CGSize(width: 100, height: 20)
         let origin = CGPoint(x: UIScreen.main.bounds.midX - size.width / 2,
-                             y: is16ProSeries ? 14 : 11)
+                             y: is16ProSeries ? 16 : 13)
         let rect = CGRect(origin: origin, size: size)
         
         let imageView = UIImageView(frame: rect)
